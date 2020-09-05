@@ -89,6 +89,28 @@ public class IFrameTest {
     }
 
 
+    @Test
+    public void iframeTest5(){
+        driver.get("https://the-internet.herokuapp.com/iframe");
+
+
+        //iframe'e index ile gecis
+        driver.switchTo().frame(0);
+
+        WebElement paragraf = driver.findElement(By.xpath("//p"));
+        paragraf.clear();
+        paragraf.sendKeys("Ahmet");
+
+        driver.switchTo().defaultContent(); //defaultContent methodu ile iframe'den cikis yapabiliriz.
+        WebElement elemantelSelenium = driver.findElement(By.xpath("//a[@target='_blank']"));
+        elemantelSelenium.click();
+
+
+    }
+
+
+
+
 
 
 
