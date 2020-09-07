@@ -76,6 +76,39 @@ public class ActionClassTest extends TestBase {
     }
 
 
+    @Test
+    public void buyukKucukYazma(){
+
+        driver.get("http://google.com");
+        WebElement searchBox = driver.findElement(By.name("q"));
+        searchBox.sendKeys(Keys.SHIFT + "gilgamis destani");
+
+    Actions actions = new Actions(driver);
+    actions.moveToElement(searchBox).click()
+            .keyDown(Keys.SHIFT)
+            .sendKeys("gilgamis")
+            .keyUp(Keys.SHIFT)
+            .sendKeys("destani")
+            .perform();
+
+
+
+
+
+    }
+
+    @Test
+    public void dropAndDrag(){
+
+        driver.get("http://google.com");
+        WebElement searchBox = driver.findElement(By.name("q"));
+        WebElement logo = driver.findElement(By.id("hplogo"));
+
+        Actions actions = new Actions(driver);
+        actions.dragAndDrop(logo,searchBox).perform();
+    }
+
+
 
 
 
