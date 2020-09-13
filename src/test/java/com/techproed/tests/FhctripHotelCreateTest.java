@@ -22,7 +22,6 @@ public class FhctripHotelCreateTest extends TestBase {
         fhctripHotelCreatePage.email.sendKeys("ahmttrk45@outlook.com");
         fhctripHotelCreatePage.name.sendKeys("Ahmet TURK");
         fhctripHotelCreatePage.phone.sendKeys("0123456789");
-        fhctripHotelCreatePage.idGroup.click();
         Select select = new Select(fhctripHotelCreatePage.idGroup);
         select.selectByIndex(1);
         fhctripHotelCreatePage.submit.click();
