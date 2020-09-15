@@ -1,4 +1,4 @@
-package com.techproed.utulities;
+package com.techproed.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

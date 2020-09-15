@@ -1,8 +1,8 @@
 package com.techproed.smoketests;
 
 import com.techproed.pages.FhctripLoginPage;
-import com.techproed.utulities.ConfigurationReader;
-import com.techproed.utulities.TestBase;
+import com.techproed.utilities.ConfigurationReader;
+import com.techproed.utilities.TestBase;
 import org.testng.annotations.Test;
 
 public class FhcLoginTest extends TestBase {

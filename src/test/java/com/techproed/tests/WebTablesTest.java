@@ -1,10 +1,9 @@
 package com.techproed.tests;
 
-import com.techproed.utulities.TestBase;
+import com.techproed.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
