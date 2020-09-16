@@ -1,0 +1,61 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name="BelirliMethodlar">
+
+    <test name="MethodTests">
+
+
+        <classes>
+            
+            <class name="com.techproed.tests.ActionClassTest">
+                <methods>
+                    <!-- Method eklemek icin "include" kullanilir -->
+
+
+                    <include name="hoverOver" ></include>
+                    <include name="sagTiklama"></include>
+                    
+
+
+                </methods>
+
+            </class>
+
+
+
+
+            <class name="com.techproed.tests.WaitTest">
+                <methods>
+
+                    <!-- Exclude ile yazilan method haric classtaki tum testler calistirilir. -->
+                    <exclude name="implicitlyWait"></exclude>
+
+                </methods>
+
+
+
+
+            </class>
+
+
+
+
+
+
+
+
+        </classes>
+
+        
+   
+
+
+
+
+
+
+    </test>
+
+
+</suite>

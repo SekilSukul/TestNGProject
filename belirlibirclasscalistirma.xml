@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name="FhcTripPaketi">
+
+    <test name="FhcTripTestleri">
+
+
+
+
+
+    <classes>
+        
+        <class name="com.techproed.tests.FhctripTest"></class>
+        <class name="com.techproed.tests.OrnekWebTable"></class>
+        <class name="com.techproed.tests.FhctripHotelCreateTest"></class>
+        
+        
+        
+    </classes>
+
+
+
+
+
+
+    </test>
+
+
+</suite>

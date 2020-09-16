@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestGruplari">
+
+
+
+    <test name="GrubuFhcTripOlanTestler">
+        <groups>
+            <run>
+<!-- include secilirse sadece yazilan gruptaki testleri calistirir, exclude secilirse yazilan grubun disindaki testleri calistir.-->
+
+                <include name="FhcTrip"></include>
+
+
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.techproed.tests.FhctripHotelCreateTest"></class>
+            <class name="com.techproed.tests.FhctripTest"></class>
+        </classes>
+
+
+
+    </test>
+
+
+
+
+</suite>

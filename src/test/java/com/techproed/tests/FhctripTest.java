@@ -8,7 +8,7 @@ public class FhctripTest extends TestBase {
 
 
 
-    @Test
+    @Test (groups = "FhcTrip")
     public void fhcTripTest01(){
 
         FhctripLoginPage fhctripLoginPage = new FhctripLoginPage(driver);

@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class FhctripHotelCreateTest extends TestBase {
 
-    @Test
+    @Test (groups = "FhcTrip")
     public void FhctripHotelCreateTest01(){
 
         FhctripHotelCreatePage fhctripHotelCreatePage = new FhctripHotelCreatePage(driver);
